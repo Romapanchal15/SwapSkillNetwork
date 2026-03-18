@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Profile | SwapSkillNetwork</title>
+
+<style>
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+}
+
+/* NAV */
+nav{
+    background:black;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    margin:15px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#00ffcc;
+}
+
+/* COVER */
+.cover{
+    height:250px;
+    background:url("./Photos/backgroundimage.jpg");
+    background-size:cover;
+    background-position:center;
+    position:relative;
+}
+
+/* PROFILE IMAGE */
+.profile-img{
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    border:5px solid white;
+    position:absolute;
+    bottom:-65px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+/* PROFILE HEADER */
+.profile-header{
+    text-align:center;
+    margin-top:80px;
+}
+
+.profile-header h1{
+    color:#00ffcc;
+}
+
+.profile-header p{
+    opacity:0.8;
+}
+
+/* BUTTON */
+.edit-btn{
+    margin-top:10px;
+    padding:8px 20px;
+    border:none;
+    border-radius:20px;
+    background:#00ffcc;
+    cursor:pointer;
+}
+
+/* STATS */
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:20px;
+}
+
+.stat{
+    background:rgba(255,255,255,0.1);
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+}
+
+/* SECTION */
+.section{
+    padding:50px 20px;
+}
+
+/* SKILLS GRID */
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.skill-card{
+    width:200px;
+    background:rgba(255,255,255,0.1);
+    border-radius:15px;
+    overflow:hidden;
+    text-align:center;
+}
+
+.skill-card img{
+    width:100%;
+    height:120px;
+    object-fit:cover;
+}
+
+.skill-card h3{
+    padding:10px;
+}
+
+/* TABS */
+.tabs{
+    text-align:center;
+    margin-top:20px;
+}
+
+.tabs button{
+    margin:10px;
+    padding:10px 20px;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+/* POSTS */
+.post{
+    max-width:600px;
+    margin:20px auto;
+    background:rgba(255,255,255,0.1);
+    padding:15px;
+    border-radius:10px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:black;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="skills.html">Skills</a>
+<a href="community.html">Community</a>
+<a href="profile.html">Profile</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<!-- COVER -->
+<div class="cover">
+<img src="./Photos/IMG-20250115-WA0294.jpg" class="profile-img">
+</div>
+
+<!-- PROFILE HEADER -->
+<div class="profile-header">
+<h1>Roma Panchal</h1>
+<p>📍 Chh. Sambhajinagar, India | 💡 Skill Enthusiast</p>
+<p>"Love learning and sharing knowledge with others!"</p><br>
+
+<button class="edit-btn">Edit Profile</button>
+
+<div class="stats">
+<div class="stat">
+<h2>4.8 ⭐</h2>
+<p>Rating</p>
+</div>
+
+<div class="stat">
+<h2>25</h2>
+<p>Exchanges</p>
+</div>
+
+<div class="stat">
+<h2>12</h2>
+<p>Skills</p>
+</div>
+</div>
+
+</div>
+
+<!-- SKILLS OFFERED -->
+<section class="section">
+<h2 style="text-align:center;color:#00ffcc;">🎯 Skills Offered</h2>
+
+<div class="skills">
+
+<div class="skill-card">
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+<h3>Web Development</h3>
+</div>
+
+<div class="skill-card">
+<img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97">
+<h3>UI/UX Design</h3>
+</div>
+
+<div class="skill-card">
+<img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d">
+<h3>Public Speaking</h3>
+</div>
+
+</div>
+</section>
+
+<!-- SKILLS WANTED -->
+<section class="section">
+<h2 style="text-align:center;color:#00ffcc;">📚 Skills Wanted</h2>
+
+<div class="skills">
+
+<div class="skill-card">
+<img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4">
+<h3>Python</h3>
+</div>
+
+<div class="skill-card">
+<img src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72">
+<h3>Digital Marketing</h3>
+</div>
+
+<div class="skill-card">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+<h3>Photography</h3>
+</div>
+
+</div>
+</section>
+
+<!-- TABS -->
+<div class="tabs">
+<button>Posts</button>
+<button>Reviews</button>
+</div>
+
+<!-- POSTS -->
+<div class="post">
+<h3>💬 Shared Web Development Basics</h3>
+<p>Taught HTML & CSS fundamentals to 5 learners this week!</p>
+</div>
+
+<div class="post">
+<h3>🎨 Learning UI Design</h3>
+<p>Currently improving design skills with real projects.</p>
+</div>
+
+<!-- FOOTER -->
+<footer>
+© 2026 SwapSkillNetwork | User Profile
+</footer>
+
+</body>
+</html>
