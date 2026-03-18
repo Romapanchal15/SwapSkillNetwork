@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SkillsSwapSkillNetwork</title>
+
+    <style>
+        /* RESET */
+        .hero {
+            padding: 90px 20px;
+            text-align: center;
+        }
+
+        .hero-text {
+            margin-top: 15px;
+            font-size: 18px;
+            color: #dcdcdc;
+        }
+
+        /* SEARCH */
+        .search-box {
+            margin-top: 30px;
+        }
+
+        .search-box input {
+            padding: 12px;
+            width: 260px;
+            border-radius: 8px 0 0 8px;
+            border: none;
+        }
+
+        .search-box button {
+            padding: 12px 18px;
+            border: none;
+            background: #00ffcc;
+            font-weight: bold;
+            border-radius: 0 8px 8px 0;
+            cursor: pointer;
+        }
+
+        .search-box button:hover {
+            background: white;
+        }
+
+        /* TAGS */
+        .quick-tags {
+            margin-top: 20px;
+        }
+
+        .quick-tags span {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .quick-tags span:hover {
+            background: #00ffcc;
+            color: black;
+        }
+
+        /* BUTTON */
+        .hero-btn {
+            margin-top: 30px;
+        }
+
+        .hero-btn a {
+            text-decoration: none;
+            background: #00ffcc;
+            color: black;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        .hero-btn a:hover {
+            background: white;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        /* BACKGROUND */
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 18px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 18px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #00ffcc;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #00ffcc;
+            margin-bottom: 25px;
+        }
+
+        /* SKILL GRID */
+        .skill-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .skill-box {
+            width: 300px;
+            padding: 25px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            transition: 0.3s;
+        }
+
+        .skill-box:hover {
+            transform: translateY(-10px);
+            background: rgba(0, 255, 204, 0.15);
+        }
+
+        .skill-box img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+
+        .skill-box h3 {
+            margin-bottom: 15px;
+            color: #00ffcc;
+        }
+
+        /* BARTER SECTION */
+        .barter {
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+
+        .barter-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .barter-card {
+            width: 350px;
+            padding: 30px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            background: #00ffcc;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: white;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html"> Home</a>
+        <a href="about.html"> About</a>
+        <a href="skills.html"> Skills</a>
+        <a href="community.html">Community</a>
+        <a href="contact.html"> Contact</a>
+    </nav>
+
+    <!-- INTRO -->
+    <section class="hero">
+
+        <h2>Explore All Types of Skills</h2>
+
+        <p class="hero-text">
+            Discover thousands of skills from people around the world 🌍
+            Learn something new or teach what you love through our
+            <b>Skill Barter System</b>.
+        </p>
+
+        <!-- SEARCH BAR -->
+        <div class="search-box">
+            <input type="text" placeholder="Search skills like Web Design, Cooking, AI...">
+            <button>Search</button>
+        </div>
+
+        <!-- QUICK CATEGORY BUTTONS -->
+        <div class="quick-tags">
+            <span>💻 Tech</span>
+            <span>🎨 Design</span>
+            <span>📚 Study</span>
+            <span>💼 Business</span>
+            <span>🎵 Music</span>
+            <span>🧠 Growth</span>
+        </div>
+
+        <!-- CTA BUTTON -->
+        <div class="hero-btn">
+            <a href="#barter">Start Skill Exchange 🚀</a>
+        </div>
+
+        <br><br><br>
+        <hr><br><br>
+
+        <h2>Skill Categories</h2>
+
+        <div class="skill-grid">
+
+            <!-- Technical -->
+            <div class="skill-box">
+                <img src="./Photos/communication.webp">
+                <h3>💻 Technical Skills</h3>
+                <p>Programming, Web Development, App Development, AI, Cyber Security, Data Science.</p>
+            </div>
+
+            <!-- Creative -->
+            <div class="skill-box">
+                <img src="./Photos/skill2.jpg">
+                <h3>🎨 Creative Skills</h3>
+                <p>Graphic Design, Video Editing, Animation, Photography, UI/UX Design.</p>
+            </div>
+
+            <!-- Academic -->
+            <div class="skill-box">
+                <img src="./Photos/skill3.jpg">
+                <h3>📚 Academic Skills</h3>
+                <p>Mathematics, Science, Languages, Research Writing, Exam Preparation.</p>
+            </div>
+
+            <!-- Business -->
+            <div class="skill-box">
+                <img src="./Photos/business.webp">
+                <h3>💼 Business Skills</h3>
+                <p>Marketing, Entrepreneurship, Finance, Leadership, Management.</p>
+            </div>
+
+            <!-- Communication -->
+            <div class="skill-box">
+                <img src="./Photos/group.jpeg">
+                <h3>🗣 Communication Skills</h3>
+                <p>Public Speaking, Confidence Building, Presentation Skills, Interview Skills.</p>
+            </div>
+
+            <!-- Personal Development -->
+            <div class="skill-box">
+                <img src="./Photos/skill6.jpg">
+                <h3>🧠 Personal Growth</h3>
+                <p>Time Management, Productivity, Goal Setting, Motivation.</p>
+            </div>
+
+            <!-- Arts & Hobbies -->
+            <div class="skill-box">
+                <img src="./Photos/hobbies.jpg">
+                <h3>🎵 Arts & Hobbies</h3>
+                <p>Music, Dance, Cooking, Crafting, Fitness, Yoga.</p>
+            </div>
+
+            <!-- Technology Advanced -->
+            <div class="skill-box">
+                <img src="./Photos/advance tech.jpeg">
+                <h3>🤖 Advanced Tech</h3>
+                <p>Artificial Intelligence, Machine Learning, Robotics, Cloud Computing.</p>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- BARTER SYSTEM -->
+    <section class="barter" id="barter">
+
+        <h2>Barter System 🤝</h2>
+
+        <div class="barter-container">
+
+            <!-- WHO WANTS TO LEARN -->
+            <div class="barter-card">
+                <h3>🔍 Who Wants to Learn</h3>
+
+                <input type="text" placeholder="Full Name">
+                <input type="text" placeholder="City">
+                <input type="email" placeholder="Email Address">
+
+                <input type="text" placeholder="Skill You Want To Learn">
+
+                <select>
+                    <option>Select Level</option>
+                    <option>Beginner</option>
+                    <option>Intermediate</option>
+                    <option>Advanced</option>
+                </select>
+
+                <textarea placeholder="Why do you want this skill?"></textarea>
+
+                <button>Submit Request</button>
+            </div>
+
+            <!-- WHO IS OFFERING -->
+            <div class="barter-card">
+                <h3>📢 Who Is Offering Skill</h3>
+
+                <input type="text" placeholder="Full Name">
+                <input type="text" placeholder="City">
+                <input type="email" placeholder="Email Address">
+
+                <input type="text" placeholder="Skill You Can Teach">
+
+                <select>
+                    <option>Select Your Expertise</option>
+                    <option>Basic Knowledge</option>
+                    <option>Good Experience</option>
+                    <option>Expert</option>
+                </select>
+
+                <textarea placeholder="Describe your experience"></textarea>
+
+                <button>Offer Skill</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        © 2026 SwapSkillNetwork | Learn. Share. Grow.
+    </footer>
+
+</body>
+
+</html>
