@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SwapSkillNetwork</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(to right, #141e30, #243b55);
+            color: white;
+
+        }
+
+        /* HEADER */
+        header {
+            background: rgb(69, 79, 88);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .tagline {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            font-size: 20px;
+        }
+
+        .icon {
+            width: 25px;
+            height: 25px;
+        }
+
+        .icon2 {
+            width: 25px;
+            height: 25px;
+        }
+
+        .icon3 {
+            width: 25px;
+            height: 25px;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background: #111;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 20px;
+            font-weight: bold;
+            display: inline-block;
+            /* inline-block property */
+        }
+
+        nav a:hover {
+            color: #00ffcc;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            background: url(./Photos/group\ discussion.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero-box {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 20px;
+        }
+
+        /* SECTION */
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        /* CARDS */
+        .card {
+            background: white;
+            color: black;
+            width: 260px;
+            height: 280px;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 15px;
+            display: inline-block;
+            /* inline-block */
+            vertical-align: top;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* BUTTON */
+        button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            background: linear-gradient(45deg, #ff512f, #dd2476);
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: linear-gradient(45deg, #00c6ff, #0072ff);
+        }
+
+        /* ASIDE */
+        aside {
+            background: #222;
+            padding: 30px;
+            text-align: center;
+        }
+
+        /* FOOTER */
+        footer {
+            background: black;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1><img src="https://www.svgrepo.com/show/513304/globe-2.svg" height="30px"> SwapSkillNetwork</h1>
+
+        <div class="tagline"><span>Exchange Skills</span><img src="https://www.svgrepo.com/show/396606/handshake.svg"
+                alt="handshske" class="icon">
+            <span>Learn Together</span><img
+                src="https://www.svgrepo.com/show/382165/book-shelf-books-education-learning-school-study.svg"
+                alt="books" class="icon2"><span>Grow Together</span><img
+                src="https://www.svgrepo.com/show/402626/rocket.svg" alt="grow" class="icon3">
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html"> Home</a>
+        <a href="about.html"> About</a>
+        <a href="skills.html"> Skills</a>
+        <a href="community.html">Community</a>
+        <a href="contact.html"> Contact</a>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <div class="hero">
+        <div class="hero-box">
+            <h2>Welcome to the Future of Learning 🌟</h2>
+            <p>No Money 💰 | Only Skills 🔥</p>
+            <a href="skills.html">
+                <button>Explore Skills 🚀</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <section>
+        <h2>💚 Our Mission</h2>
+        <p>
+            SwapSkillNetwork is a social impact platform where people
+            exchange skills instead of paying money.
+            We believe education should be accessible to everyone 🌍✨
+        </p>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section>
+
+        <h2>⭐ Why Choose Us?</h2>
+
+        <div class="card">
+            <img src="./Photos/skill exchange.jpg">
+            <h3>🤝 Skill Exchange</h3>
+            <p>Teach what you know and learn what you need.</p>
+        </div>
+
+        <div class="card">
+            <img src="./Photos/global community.webp">
+            <h3>🌍 Global Community</h3>
+            <p>Connect with learners worldwide.</p>
+        </div>
+
+        <div class="card">
+            <img src="./Photos/personal growth.webp" <h3>📈 Personal Growth</h3>
+            <p>Improve your skills and build confidence.</p>
+        </div>
+
+    </section>
+
+    <!-- EXTRA INFORMATION -->
+    <aside>
+        <h2>🔥 How It Works</h2>
+        <p>1️⃣ Create Profile</p>
+        <p>2️⃣ Add Skills</p>
+        <p>3️⃣ Find Matches</p>
+        <p>4️⃣ Start Learning</p>
+    </aside>
+
+    <!-- SOCIAL IMPACT -->
+    <section>
+        <h2>🌟 Social Impact</h2>
+        <p>
+            Together we build a smarter, stronger, and more connected society.
+            Skill sharing reduces inequality and promotes collaboration 💙
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 SwapSkillNetwork 🌍</p>
+        <p>Made with ❤️ for Education & Social Growth</p>
+    </footer>
+
+</body>
+
+</html>
