@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rural Skill Connect | SwapSkillNetwork</title>
+
+<style>
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+}
+
+/* NAV */
+nav{
+    background:rgba(0,0,0,0.9);
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    margin:15px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#00ffcc;
+}
+
+/* HERO */
+.hero{
+    padding:110px 20px;
+    text-align:center;
+    background-image: linear-gradient(
+        rgba(15,32,39,0.8),
+        rgba(32,58,67,0.8),
+        rgba(44,83,100,0.8)
+    ),
+    url("https://images.unsplash.com/photo-1509099836639-18ba1795216d");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h1{
+    font-size:48px;
+    color:#00ffcc;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:18px;
+}
+
+/* BUTTON */
+.btn{
+    margin-top:25px;
+    padding:12px 25px;
+    border:none;
+    border-radius:25px;
+    background:#00ffcc;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background:white;
+}
+
+/* SECTIONS */
+section{
+    padding:70px 20px;
+    text-align:center;
+}
+
+/* CARDS */
+.card-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+    margin-top:40px;
+}
+
+.card{
+    width:300px;
+    padding:20px;
+    border-radius:15px;
+    background:rgba(255,255,255,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background:rgba(0,255,204,0.2);
+}
+
+.card img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+/* ALT SECTIONS */
+.alt{
+    background:rgba(255,255,255,0.05);
+}
+
+/* STATS */
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.stat-box{
+    background:rgba(0,0,0,0.4);
+    padding:20px;
+    border-radius:15px;
+    width:200px;
+}
+
+.stat-box h2{
+    color:#00ffcc;
+}
+
+/* FORM */
+.form{
+    background:rgba(0,0,0,0.5);
+}
+
+input, textarea, select{
+    width:85%;
+    padding:12px;
+    margin:10px;
+    border:none;
+    border-radius:10px;
+}
+
+/* FOOTER */
+footer{
+    background:black;
+    padding:20px;
+    text-align:center;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+<a href="index.html"> Home</a>
+        <a href="about.html"> About</a>
+        <a href="skills.html"> Skills</a>
+        <a href="community.html">Community</a>
+        <a href="profile.html">Profile</a>
+        <a href="learning-path.html">Learning Path</a>
+        <a href="history.html">Exchange History</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="ruralskillconnect.html">Rural Skill Connect</a>
+        <a href="contact.html"> Contact</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<h1>🌾 Rural Skill Connect</h1>
+<p>Connecting hidden rural talent with global learning opportunities</p>
+<button class="btn" onclick="document.getElementById('join').scrollIntoView({behavior:'smooth'})">
+Join Now
+</button>
+</section>
+
+<!-- ABOUT -->
+<section>
+<h2 style="color:#00ffcc;">Why This Initiative?</h2>
+<p style="max-width:800px;margin:auto;">
+Rural communities have immense talent but limited exposure.  
+SwapSkillNetwork helps bridge this gap by enabling skill exchange between rural and urban users.
+</p>
+</section>
+
+<!-- SKILLS -->
+<section class="alt">
+
+<h2 style="color:#00ffcc;">🌟 Rural Skill Highlights</h2>
+
+<div class="card-container">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+<h3>Handicrafts</h3>
+<p>Pottery, weaving, handmade creativity.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1598514983318-2f64f8f4796c">
+<h3>Agriculture</h3>
+<p>Organic farming & sustainable techniques.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1506806732259-39c2d0268443">
+<h3>Traditional Cooking</h3>
+<p>Authentic village cuisines.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308">
+<h3>Folk Arts</h3>
+<p>Music, dance & storytelling.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- HOW IT WORKS -->
+<section>
+
+<h2 style="color:#00ffcc;">⚙ How It Works</h2>
+
+<p>
+✔ Share your skills<br><br>
+✔ Learn new skills<br><br>
+✔ No money – pure exchange<br><br>
+✔ Build connections<br>
+</p>
+
+</section>
+
+<!-- STATS -->
+<section class="alt">
+
+<h2 style="color:#00ffcc;">📊 Our Impact</h2>
+
+<div class="stats">
+
+<div class="stat-box">
+<h2>500+</h2>
+<p>Rural Users</p>
+</div>
+
+<div class="stat-box">
+<h2>300+</h2>
+<p>Skills Shared</p>
+</div>
+
+<div class="stat-box">
+<h2>100+</h2>
+<p>Successful Exchanges</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- STORY -->
+<section>
+
+<h2 style="color:#00ffcc;">💬 Success Story</h2>
+
+<p style="max-width:700px;margin:auto;">
+"A village artisan shared pottery skills and learned digital marketing in return.
+Today, their products are sold online!"
+</p>
+
+</section>
+
+<!-- FORM -->
+<section id="join" class="form">
+
+<h2 style="color:#00ffcc;">📢 Join Rural Skill Connect</h2>
+
+<input type="text" placeholder="Your Name">
+<input type="text" placeholder="Village / City">
+
+<select>
+<option>Select Role</option>
+<option>Skill Provider</option>
+<option>Learner</option>
+</select>
+
+<input type="text" placeholder="Skill You Offer">
+<input type="text" placeholder="Skill You Want">
+
+<textarea placeholder="Describe your skills"></textarea><br>
+
+<button class="btn">Submit</button>
+
+</section>
+
+<!-- QUOTE -->
+<section class="alt">
+<h3>"Empowering villages today builds the future of tomorrow."</h3>
+</section>
+
+<!-- FOOTER -->
+<footer>
+© 2026 SwapSkillNetwork | Rural Skill Connect 🌾
+</footer>
+
+</body>
+</html>

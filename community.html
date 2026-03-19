@@ -1,374 +1,384 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-<meta charset="UTF-8">
-<title>Community | SwapSkillNetwork</title>
 
-<style>
+    <title>Community | SwapSkillNetwork</title>
 
-/* RESET */
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Segoe UI', sans-serif;
-}
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
 
-/* BODY */
-body{
-    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-    color:white;
-}
 
-/* NAV */
-nav{
-    background:black;
-    padding:15px;
-    text-align:center;
-}
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+        }
 
-nav a{
-    color:white;
-    margin:15px;
-    text-decoration:none;
-    font-weight:bold;
-}
 
-nav a:hover{
-    color:#00ffcc;
-}
+        nav {
+            background: black;
+            padding: 15px;
+            text-align: center;
+        }
 
-/* HERO */
-.hero{
-    padding:100px 20px;
-    text-align:center;
-}
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-.hero h1{
-    color:#00ffcc;
-    font-size:40px;
-}
+        nav a:hover {
+            color: #00ffcc;
+        }
 
-.hero p{
-    margin-top:15px;
-    color:#ccc;
-}
 
-/* STATS */
-.stats{
-    display:flex;
-    justify-content:center;
-    gap:40px;
-    margin-top:40px;
-}
+        .hero {
+            padding: 100px 20px;
+            text-align: center;
+        }
 
-.stat{
-    background:rgba(255,255,255,0.1);
-    padding:20px;
-    border-radius:15px;
-    width:150px;
-}
+        .hero h1 {
+            color: #00ffcc;
+            font-size: 40px;
+        }
 
-/* POSTS */
-.posts{
-    padding:60px 20px;
-}
+        .hero p {
+            margin-top: 15px;
+            color: #ccc;
+        }
 
-.post-container{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:25px;
-}
 
-.post{
-    width:300px;
-    background:rgba(255,255,255,0.1);
-    padding:20px;
-    border-radius:15px;
-    transition:0.3s;
-}
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+        }
 
-.post:hover{
-    transform:translateY(-10px);
-    background:rgba(0,255,204,0.2);
-}
+        .stat {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            width: 150px;
+        }
 
-.post img{
-    width:100%;
-    border-radius:10px;
-}
 
-/* CHALLENGES */
-.challenges{
-    padding:60px 20px;
-    background:rgba(255,255,255,0.05);
-}
+        .posts {
+            padding: 60px 20px;
+        }
 
-.challenge-box{
-    margin:20px auto;
-    max-width:600px;
-    padding:20px;
-    border-radius:15px;
-    background:rgba(0,255,204,0.1);
-}
+        .post-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
 
-/* EVENTS */
-.events{
-    padding:60px 20px;
-}
+        .post {
+            width: 300px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
 
-.event{
-    margin:15px auto;
-    max-width:600px;
-    padding:20px;
-    border-radius:10px;
-    background:rgba(255,255,255,0.1);
-}
+        .post:hover {
+            transform: translateY(-10px);
+            background: rgba(0, 255, 204, 0.2);
+        }
 
-/* MEMBERS */
-.members{
-    padding:60px 20px;
-    background:rgba(255,255,255,0.05);
-}
+        .post img {
+            width: 100%;
+            border-radius: 10px;
+        }
 
-.member-container{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:25px;
-}
 
-.member{
-    width:250px;
-    padding:20px;
-    border-radius:15px;
-    text-align:center;
-    background:rgba(255,255,255,0.1);
-}
+        .challenges {
+            padding: 60px 20px;
+            background: rgba(255, 255, 255, 0.05);
+        }
 
-.member img{
-    width:80px;
-    height:80px;
-    border-radius:50%;
-}
+        .challenge-box {
+            margin: 20px auto;
+            max-width: 600px;
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(0, 255, 204, 0.1);
+        }
 
-/* TESTIMONIALS */
-.testimonials{
-    padding:60px 20px;
-}
 
-.testimonial{
-    max-width:600px;
-    margin:20px auto;
-    padding:20px;
-    background:rgba(255,255,255,0.1);
-    border-radius:10px;
-}
+        .events {
+            padding: 60px 20px;
+        }
 
-/* DISCUSSION */
-.discussion{
-    padding:60px 20px;
-}
+        .event {
+            margin: 15px auto;
+            max-width: 600px;
+            padding: 20px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+        }
 
-textarea{
-    width:80%;
-    padding:10px;
-    border-radius:10px;
-    border:none;
-}
 
-/* JOIN */
-.join{
-    padding:60px 20px;
-    text-align:center;
-    background:rgba(0,0,0,0.5);
-}
+        .members {
+            padding: 60px 20px;
+            background: rgba(255, 255, 255, 0.05);
+        }
 
-input{
-    padding:10px;
-    margin:10px;
-    border:none;
-    border-radius:8px;
-}
+        .member-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
 
-/* BUTTON */
-button{
-    padding:10px 20px;
-    border:none;
-    border-radius:8px;
-    background:#00ffcc;
-    cursor:pointer;
-}
+        .member {
+            width: 250px;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+        }
 
-button:hover{
-    background:white;
-}
+        .member img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
 
-/* FOOTER */
-footer{
-    text-align:center;
-    padding:20px;
-    background:black;
-}
 
-</style>
+        .testimonials {
+            padding: 60px 20px;
+        }
+
+        .testimonial {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+
+
+        .discussion {
+            padding: 60px 20px;
+        }
+
+        textarea {
+            width: 80%;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+        }
+
+
+        .join {
+            padding: 60px 20px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px;
+            border: none;
+            border-radius: 8px;
+        }
+
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            background: #00ffcc;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: white;
+        }
+
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: black;
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- NAV -->
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="skills.html">Skills</a>
-<a href="community.html">Community</a>
-<a href="profile.html">Profile</a>
-<a href="learning-path.html">Learning Path</a>
-<a href="history.html">Exchange History</a>
-<a href="contact.html">Contact</a>
-</nav>
 
-<!-- HERO -->
-<section class="hero">
-<h1>🌍 Community Hub</h1>
-<p>Connect, learn and grow with thousands of learners worldwide</p>
+    <nav>
+        <a href="index.html"> Home</a>
+        <a href="about.html"> About</a>
+        <a href="skills.html"> Skills</a>
+        <a href="community.html">Community</a>
+        <a href="profile.html">Profile</a>
+        <a href="learning-path.html">Learning Path</a>
+        <a href="history.html">Exchange History</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="ruralskillconnect.html">Rural Skill Connect</a>
+        <a href="contact.html"> Contact</a>
+    </nav>
 
-<div class="stats">
-<div class="stat"><h2>10K+</h2><p>Members</p></div>
-<div class="stat"><h2>5K+</h2><p>Skills</p></div>
-<div class="stat"><h2>2K+</h2><p>Exchanges</p></div>
-</div>
 
-</section>
-<hr>
-<!-- POSTS -->
-<section class="posts">
-<h2 style="text-align:center;color:#00ffcc;">🔥 Featured Posts</h2>
+    <section class="hero">
+        <h1>🌍 Community Hub</h1>
+        <p>Connect, learn and grow with thousands of learners worldwide</p>
 
-<div class="post-container">
+        <div class="stats">
+            <div class="stat">
+                <h2>10K+</h2>
+                <p>Members</p>
+            </div>
+            <div class="stat">
+                <h2>5K+</h2>
+                <p>Skills</p>
+            </div>
+            <div class="stat">
+                <h2>2K+</h2>
+                <p>Exchanges</p>
+            </div>
+        </div>
 
-<div class="post">
-<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
-<h3>Web Design Tips</h3>
-<p>Create modern UI using Flexbox & animations.</p>
-</div>
+    </section>
+    <hr>
 
-<div class="post">
-<img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
-<h3>AI Learning</h3>
-<p>Start your AI journey with Python.</p>
-</div>
+    <section class="posts">
+        <h2 style="text-align:center;color:#00ffcc;">🔥 Featured Posts</h2>
 
-<div class="post">
-<img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
-<h3>Creative Skills</h3>
-<p>Boost creativity using design tools.</p>
-</div>
+        <div class="post-container">
 
-</div>
-</section>
+            <div class="post">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
+                <h3>Web Design Tips</h3>
+                <p>Create modern UI using Flexbox & animations.</p>
+            </div>
 
-<!-- CHALLENGES -->
-<section class="challenges">
-<h2 style="text-align:center;color:#00ffcc;">🏆 Weekly Challenges</h2>
+            <div class="post">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+                <h3>AI Learning</h3>
+                <p>Start your AI journey with Python.</p>
+            </div>
 
-<div class="challenge-box">
-<p>💻 Build a responsive website in 3 days</p>
-</div>
+            <div class="post">
+                <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
+                <h3>Creative Skills</h3>
+                <p>Boost creativity using design tools.</p>
+            </div>
 
-<div class="challenge-box">
-<p>🎨 Design a logo using Canva</p>
-</div>
+        </div>
+    </section>
 
-<div class="challenge-box">
-<p>🗣 Improve public speaking in 7 days</p>
-</div>
 
-</section>
+    <section class="challenges">
+        <h2 style="text-align:center;color:#00ffcc;">🏆 Weekly Challenges</h2>
 
-<!-- EVENTS -->
-<section class="events">
-<h2 style="text-align:center;color:#00ffcc;">📅 Upcoming Events</h2>
+        <div class="challenge-box">
+            <p>💻 Build a responsive website in 3 days</p>
+        </div>
 
-<div class="event">
-<p>📢 Web Development Workshop - 25th March</p>
-</div>
+        <div class="challenge-box">
+            <p>🎨 Design a logo using Canva</p>
+        </div>
 
-<div class="event">
-<p>🤖 AI Bootcamp - 30th March</p>
-</div>
+        <div class="challenge-box">
+            <p>🗣 Improve public speaking in 7 days</p>
+        </div>
 
-<div class="event">
-<p>🎨 Design Webinar - 5th April</p>
-</div>
+    </section>
 
-</section>
 
-<!-- MEMBERS -->
-<section class="members">
-<h2 style="text-align:center;color:#00ffcc;">🌟 Top Members</h2>
+    <section class="events">
+        <h2 style="text-align:center;color:#00ffcc;">📅 Upcoming Events</h2>
 
-<div class="member-container">
+        <div class="event">
+            <p>📢 Web Development Workshop - 25th March</p>
+        </div>
 
-<div class="member">
-<img src="https://randomuser.me/api/portraits/men/32.jpg">
-<h3>Rahul</h3>
-<p>Web Developer</p>
-</div>
+        <div class="event">
+            <p>🤖 AI Bootcamp - 30th March</p>
+        </div>
 
-<div class="member">
-<img src="https://randomuser.me/api/portraits/women/44.jpg">
-<h3>Anjali</h3>
-<p>Designer</p>
-</div>
+        <div class="event">
+            <p>🎨 Design Webinar - 5th April</p>
+        </div>
 
-<div class="member">
-<img src="https://randomuser.me/api/portraits/men/65.jpg">
-<h3>Amit</h3>
-<p>AI Learner</p>
-</div>
+    </section>
 
-</div>
-</section>
 
-<!-- TESTIMONIALS -->
-<section class="testimonials">
-<h2 style="text-align:center;color:#00ffcc;">💬 Testimonials</h2>
+    <section class="members">
+        <h2 style="text-align:center;color:#00ffcc;">🌟 Top Members</h2>
 
-<div class="testimonial">
-<p>"I learned web development without paying anything!"</p>
-</div>
+        <div class="member-container">
 
-<div class="testimonial">
-<p>"Amazing platform for skill exchange!"</p>
-</div>
+            <div class="member">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg">
+                <h3>Rahul</h3>
+                <p>Web Developer</p>
+            </div>
 
-</section>
+            <div class="member">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg">
+                <h3>Anjali</h3>
+                <p>Designer</p>
+            </div>
 
-<!-- DISCUSSION -->
-<section class="discussion">
-<h2 style="color:#00ffcc;">💬 Start Discussion</h2>
+            <div class="member">
+                <img src="https://randomuser.me/api/portraits/men/65.jpg">
+                <h3>Amit</h3>
+                <p>AI Learner</p>
+            </div>
 
-<textarea rows="4" placeholder="Share your thoughts..."></textarea><br>
-<button>Post</button>
+        </div>
+    </section>
 
-</section>
 
-<!-- JOIN -->
-<section class="join">
-<h2>🚀 Join Community</h2>
+    <section class="testimonials">
+        <h2 style="text-align:center;color:#00ffcc;">💬 Testimonials</h2>
 
-<input type="text" placeholder="Name">
-<input type="email" placeholder="Email"><br>
-<button>Join Now</button>
+        <div class="testimonial">
+            <p>"I learned web development without paying anything!"</p>
+        </div>
 
-</section>
+        <div class="testimonial">
+            <p>"Amazing platform for skill exchange!"</p>
+        </div>
 
-<!-- FOOTER -->
-<footer>
-© 2026 SwapSkillNetwork | Community Driven Platform
-</footer>
+    </section>
+
+
+    <section class="discussion">
+        <h2 style="color:#00ffcc;">💬 Start Discussion</h2>
+
+        <textarea rows="4" placeholder="Share your thoughts..."></textarea><br>
+        <button>Post</button>
+
+    </section>
+
+
+    <section class="join">
+        <h2>🚀 Join Community</h2>
+
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email"><br>
+        <button>Join Now</button>
+
+    </section>
+
+
+    <footer>
+        © 2026 SwapSkillNetwork | Community Driven Platform
+    </footer>
 
 </body>
+
 </html>

@@ -1,237 +1,237 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-<meta charset="UTF-8">
-<title>Contact | SwapSkillNetwork</title>
 
-<style>
+    <title>Contact | SwapSkillNetwork</title>
 
-/* RESET */
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Segoe UI', sans-serif;
-}
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
 
-/* BODY */
-body{
-    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-    color:white;
-}
 
-/* NAV */
-nav{
-    background:black;
-    padding:15px;
-    text-align:center;
-}
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+        }
 
-nav a{
-    color:white;
-    margin:15px;
-    text-decoration:none;
-    font-weight:bold;
-}
 
-nav a:hover{
-    color:#00ffcc;
-}
+        nav {
+            background: black;
+            padding: 15px;
+            text-align: center;
+        }
 
-/* HERO */
-.hero{
-    padding:100px 20px;
-    text-align:center;
-    background-image: linear-gradient(
-        rgba(15,32,39,0.8),
-        rgba(32,58,67,0.8),
-        rgba(44,83,100,0.8)
-    ),
-    url("./Photos/contact.avif");
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-    background-size:cover;
-    background-position:center;
-}
+        nav a:hover {
+            color: #00ffcc;
+        }
 
-.hero h1{
-    color:#00ffcc;
-    font-size:40px;
-}
 
-.hero p{
-    margin-top:15px;
-}
+        .hero {
+            padding: 100px 20px;
+            text-align: center;
+            background-image: linear-gradient(rgba(15, 32, 39, 0.8),
+                    rgba(32, 58, 67, 0.8),
+                    rgba(44, 83, 100, 0.8)),
+                url("./Photos/contact.avif");
 
-/* CONTACT SECTION */
-.contact{
-    padding:60px 20px;
-}
+            background-size: cover;
+            background-position: center;
+        }
 
-.contact-container{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:40px;
-}
+        .hero h1 {
+            color: #00ffcc;
+            font-size: 40px;
+        }
 
-/* FORM */
-form{
-    width:350px;
-    background:rgba(255,255,255,0.1);
-    padding:25px;
-    border-radius:15px;
-}
+        .hero p {
+            margin-top: 15px;
+        }
 
-input, textarea{
-    width:100%;
-    padding:10px;
-    margin-top:10px;
-    border:none;
-    border-radius:8px;
-}
 
-button{
-    margin-top:15px;
-    padding:10px;
-    width:100%;
-    border:none;
-    border-radius:8px;
-    background:#00ffcc;
-    font-weight:bold;
-    cursor:pointer;
-}
+        .contact {
+            padding: 60px 20px;
+        }
 
-button:hover{
-    background:white;
-}
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+        }
 
-/* INFO */
-.info{
-    width:350px;
-}
 
-.info-box{
-    background:rgba(255,255,255,0.1);
-    padding:20px;
-    border-radius:15px;
-    margin-bottom:20px;
-}
+        form {
+            width: 350px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            background: #00ffcc;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: white;
+        }
+
+
+        .info {
+            width: 350px;
+        }
+
+        .info-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
 
 
 
-/* FAQ */
-.faq{
-    padding:60px 20px;
-}
 
-.faq-box{
-    max-width:600px;
-    margin:15px auto;
-    background:rgba(255,255,255,0.1);
-    padding:15px;
-    border-radius:10px;
-}
+        .faq {
+            padding: 60px 20px;
+        }
 
-/* FOOTER */
-footer{
-    text-align:center;
-    padding:20px;
-    background:black;
-}
+        .faq-box {
+            max-width: 600px;
+            margin: 15px auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+        }
 
-</style>
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: black;
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- NAV -->
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="skills.html">Skills</a>
-<a href="community.html">Community</a>
-<a href="profile.html">Profile</a>
-<a href="learning-path.html">Learning Path</a>
-<a href="history.html">Exchange History</a>
-<a href="contact.html">Contact</a>
-</nav>
 
-<!-- HERO -->
-<section class="hero">
-<h1>📞 Contact Us</h1>
-<p>We’d love to hear from you! Reach out for support or collaboration.</p>
-</section>
-
-<!-- CONTACT -->
-<section class="contact">
-
-<div class="contact-container">
-
-<!-- FORM -->
-<form>
-<h2 style="color:#00ffcc;">Send Message</h2>
-
-<input type="text" placeholder="Your Name" required>
-<input type="email" placeholder="Your Email" required>
-<input type="text" placeholder="Subject">
-<textarea rows="4" placeholder="Your Message"></textarea>
-
-<button>Send Message</button>
-
-</form>
-
-<!-- INFO -->
-<div class="info">
-
-<div class="info-box">
-<h3>Email</h3>
-<p>support@swapskillnetwork.com</p>
-</div>
-
-<div class="info-box">
-<h3>Phone</h3>
-<p>+91 9876543210</p>
-</div>
-
-<div class="info-box">
-<h3>Address</h3>
-<p>Jalna, Maharashtra, India</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="community.html">Community</a>
+        <a href="profile.html">Profile</a>
+        <a href="learning-path.html">Learning Path</a>
+        <a href="history.html">Exchange History</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="ruralskillconnect.html">Rural Skill Connect</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
 
+    <section class="hero">
+        <h1>📞 Contact Us</h1>
+        <p>We’d love to hear from you! Reach out for support or collaboration.</p>
+    </section>
 
-<!-- FAQ -->
-<section class="faq">
 
-<h2 style="text-align:center;color:#00ffcc;">❓ Frequently Asked Questions</h2>
+    <section class="contact">
 
-<div class="faq-box">
-<h3>How does skill exchange work?</h3>
-<p>You offer a skill and learn another without paying money.</p>
-</div>
+        <div class="contact-container">
 
-<div class="faq-box">
-<h3>Is it free?</h3>
-<p>Yes, completely free for all users.</p>
-</div>
 
-<div class="faq-box">
-<h3>How to join?</h3>
-<p>Simply register and start exchanging skills.</p>
-</div>
+            <form>
+                <h2 style="color:#00ffcc;">Send Message</h2>
 
-</section>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Subject">
+                <textarea rows="4" placeholder="Your Message"></textarea>
 
-<!-- FOOTER -->
-<footer>
-© 2026 SwapSkillNetwork | Contact Support
-</footer>
+                <button>Send Message</button>
+
+            </form>
+
+
+            <div class="info">
+
+                <div class="info-box">
+                    <h3>Email</h3>
+                    <p>support@swapskillnetwork.com</p>
+                </div>
+
+                <div class="info-box">
+                    <h3>Phone</h3>
+                    <p>+91 9876543210</p>
+                </div>
+
+                <div class="info-box">
+                    <h3>Address</h3>
+                    <p>Jalna, Maharashtra, India</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <section class="faq">
+
+        <h2 style="text-align:center;color:#00ffcc;">❓ Frequently Asked Questions</h2>
+
+        <div class="faq-box">
+            <h3>How does skill exchange work?</h3>
+            <p>You offer a skill and learn another without paying money.</p>
+        </div>
+
+        <div class="faq-box">
+            <h3>Is it free?</h3>
+            <p>Yes, completely free for all users.</p>
+        </div>
+
+        <div class="faq-box">
+            <h3>How to join?</h3>
+            <p>Simply register and start exchanging skills.</p>
+        </div>
+
+    </section>
+
+
+    <footer>
+        © 2026 SwapSkillNetwork | Contact Support
+    </footer>
 
 </body>
+
 </html>

@@ -1,233 +1,249 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-<meta charset="UTF-8">
-<title>Exchange History | SwapSkillNetwork</title>
 
-<style>
+    <title>Exchange History | SwapSkillNetwork</title>
 
-/* RESET */
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Segoe UI', sans-serif;
-}
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
 
-body{
-    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-    color:white;
-}
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+        }
 
-/* NAV */
-nav{
-    background:black;
-    padding:15px;
-    text-align:center;
-}
 
-nav a{
-    color:white;
-    margin:15px;
-    text-decoration:none;
-    font-weight:bold;
-}
+        nav {
+            background: black;
+            padding: 15px;
+            text-align: center;
+        }
 
-nav a:hover{
-    color:#00ffcc;
-}
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-/* HERO */
-.hero{
-    padding:100px 20px;
-    text-align:center;
-    background-image: linear-gradient(
-        rgba(15,32,39,0.8),
-        rgba(32,58,67,0.8),
-        rgba(44,83,100,0.8)
-    ),
-    url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f");
+        nav a:hover {
+            color: #00ffcc;
+        }
 
-    background-size:cover;
-    background-position:center;
-}
 
-.hero h1{
-    color:#00ffcc;
-    font-size:40px;
-}
+        .hero {
+            padding: 100px 20px;
+            text-align: center;
+            background-image: linear-gradient(rgba(15, 32, 39, 0.8),
+                    rgba(32, 58, 67, 0.8),
+                    rgba(44, 83, 100, 0.8)),
+                url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f");
 
-/* STATS */
-.stats{
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    margin-top:30px;
-}
+            background-size: cover;
+            background-position: center;
+        }
 
-.stat{
-    background:rgba(255,255,255,0.1);
-    padding:15px;
-    border-radius:10px;
-    text-align:center;
-}
+        .hero h1 {
+            color: #00ffcc;
+            font-size: 40px;
+        }
 
-/* FILTER */
-.filter{
-    text-align:center;
-    margin:30px;
-}
 
-.filter button{
-    margin:10px;
-    padding:8px 15px;
-    border:none;
-    border-radius:20px;
-    cursor:pointer;
-    background:#00ffcc;
-}
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
 
-/* TIMELINE */
-.timeline{
-    position:relative;
-    max-width:800px;
-    margin:auto;
-}
+        .stat {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
 
-.timeline::after{
-    content:'';
-    position:absolute;
-    width:3px;
-    background:#00ffcc;
-    top:0;
-    bottom:0;
-    left:50%;
-}
 
-/* CARD */
-.container{
-    padding:20px 40px;
-    position:relative;
-    width:50%;
-}
+        .filter {
+            text-align: center;
+            margin: 30px;
+        }
 
-.container.left{
-    left:0;
-}
+        .filter button {
+            margin: 10px;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            background: #00ffcc;
+        }
 
-.container.right{
-    left:50%;
-}
 
-.card{
-    background:rgba(255,255,255,0.1);
-    padding:20px;
-    border-radius:15px;
-}
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: auto;
+        }
 
-/* STATUS */
-.status{
-    margin-top:10px;
-    display:inline-block;
-    padding:5px 10px;
-    border-radius:10px;
-    font-size:12px;
-}
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 3px;
+            background: #00ffcc;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+        }
 
-.completed{ background:green; }
-.ongoing{ background:orange; }
-.pending{ background:red; }
 
-/* FOOTER */
-footer{
-    text-align:center;
-    padding:20px;
-    background:black;
-}
+        .container {
+            padding: 20px 40px;
+            position: relative;
+            width: 50%;
+        }
 
-</style>
+        .container.left {
+            left: 0;
+        }
+
+        .container.right {
+            left: 50%;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+
+        .status {
+            margin-top: 10px;
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 10px;
+            font-size: 12px;
+        }
+
+        .completed {
+            background: green;
+        }
+
+        .ongoing {
+            background: orange;
+        }
+
+        .pending {
+            background: red;
+        }
+
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: black;
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- NAV -->
-<nav>
-<a href="index.html"> Home</a>
+
+    <nav>
+        <a href="index.html"> Home</a>
         <a href="about.html"> About</a>
         <a href="skills.html"> Skills</a>
         <a href="community.html">Community</a>
         <a href="profile.html">Profile</a>
         <a href="learning-path.html">Learning Path</a>
         <a href="history.html">Exchange History</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="ruralskillconnect.html">Rural Skill Connect</a>
         <a href="contact.html"> Contact</a>
-</nav>
+    </nav>
 
-<!-- HERO -->
-<section class="hero">
-<h1>🔄 Exchange History</h1>
-<p>Track your learning journey and skill swaps</p>
 
-<div class="stats">
-<div class="stat"><h3>25</h3><p>Total Exchanges</p></div>
-<div class="stat"><h3>18</h3><p>Completed</p></div>
-<div class="stat"><h3>5</h3><p>Ongoing</p></div>
-</div>
+    <section class="hero">
+        <h1>🔄 Exchange History</h1>
+        <p>Track your learning journey and skill swaps</p>
 
-</section>
+        <div class="stats">
+            <div class="stat">
+                <h3>25</h3>
+                <p>Total Exchanges</p>
+            </div>
+            <div class="stat">
+                <h3>18</h3>
+                <p>Completed</p>
+            </div>
+            <div class="stat">
+                <h3>5</h3>
+                <p>Ongoing</p>
+            </div>
+        </div>
 
-<!-- FILTER -->
-<div class="filter">
-<button>All</button>
-<button>Completed</button>
-<button>Ongoing</button>
-<button>Pending</button>
-</div>
+    </section>
 
-<!-- TIMELINE -->
-<div class="timeline">
 
-<div class="container left">
-<div class="card">
-<h3>👩 Roma ↔ 👨 Rahul</h3>
-<p><b>Given:</b> Web Development</p>
-<p><b>Received:</b> UI Design</p>
-<span class="status completed">Completed</span>
-</div>
-</div>
+    <div class="filter">
+        <button>All</button>
+        <button>Completed</button>
+        <button>Ongoing</button>
+        <button>Pending</button>
+    </div>
 
-<div class="container right">
-<div class="card">
-<h3>👩 Roma ↔ 👩 Anjali</h3>
-<p><b>Given:</b> Public Speaking</p>
-<p><b>Received:</b> Graphic Design</p>
-<span class="status ongoing">Ongoing</span>
-</div>
-</div>
 
-<div class="container left">
-<div class="card">
-<h3>👩 Roma ↔ 👨 Amit</h3>
-<p><b>Given:</b> HTML Basics</p>
-<p><b>Received:</b> Python</p>
-<span class="status pending">Pending</span>
-</div>
-</div>
+    <div class="timeline">
 
-<div class="container right">
-<div class="card">
-<h3>👩 Roma ↔ 👨 Karan</h3>
-<p><b>Given:</b> Communication Skills</p>
-<p><b>Received:</b> Marketing</p>
-<span class="status completed">Completed</span>
-</div>
-</div>
+        <div class="container left">
+            <div class="card">
+                <h3>👩 Roma ↔ 👨 Rahul</h3>
+                <p><b>Given:</b> Web Development</p>
+                <p><b>Received:</b> UI Design</p>
+                <span class="status completed">Completed</span>
+            </div>
+        </div>
 
-</div>
+        <div class="container right">
+            <div class="card">
+                <h3>👩 Roma ↔ 👩 Anjali</h3>
+                <p><b>Given:</b> Public Speaking</p>
+                <p><b>Received:</b> Graphic Design</p>
+                <span class="status ongoing">Ongoing</span>
+            </div>
+        </div>
 
-<!-- FOOTER -->
-<footer>
-© 2026 SwapSkillNetwork | Exchange History
-</footer>
+        <div class="container left">
+            <div class="card">
+                <h3>👩 Roma ↔ 👨 Amit</h3>
+                <p><b>Given:</b> HTML Basics</p>
+                <p><b>Received:</b> Python</p>
+                <span class="status pending">Pending</span>
+            </div>
+        </div>
+
+        <div class="container right">
+            <div class="card">
+                <h3>👩 Roma ↔ 👨 Karan</h3>
+                <p><b>Given:</b> Communication Skills</p>
+                <p><b>Received:</b> Marketing</p>
+                <span class="status completed">Completed</span>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer>
+        © 2026 SwapSkillNetwork | Exchange History
+    </footer>
 
 </body>
+
 </html>

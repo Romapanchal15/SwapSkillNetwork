@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Leaderboard | SwapSkillNetwork</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+        }
+
+
+        nav {
+            background: black;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #00ffcc;
+        }
+
+
+        .hero {
+            padding: 100px 20px;
+            text-align: center;
+            background-image: linear-gradient(rgba(15, 32, 39, 0.8),
+                    rgba(32, 58, 67, 0.8),
+                    rgba(44, 83, 100, 0.8)),
+                url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            color: #00ffcc;
+        }
+
+
+
+
+        .top3 {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 30px;
+            margin-top: -50px;
+        }
+
+        .card {
+            text-align: center;
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            width: 200px;
+        }
+
+        .card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+
+        .first {
+            transform: scale(1.2);
+            background: gold;
+            color: black;
+        }
+
+        .second {
+            background: silver;
+            color: black;
+        }
+
+        .third {
+            background: #cd7f32;
+            color: black;
+        }
+
+
+        .table {
+            width: 90%;
+            margin: 50px auto;
+            border-collapse: collapse;
+        }
+
+        .table th,
+        .table td {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .table tr {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .table tr:hover {
+            background: rgba(0, 255, 204, 0.2);
+        }
+
+        th {
+            background: black;
+            color: #00ffcc;
+        }
+
+
+        .badge {
+            padding: 5px 10px;
+            border-radius: 10px;
+        }
+
+        .gold {
+            background: gold;
+            color: black;
+        }
+
+        .silver {
+            background: silver;
+            color: black;
+        }
+
+        .bronze {
+            background: #cd7f32;
+            color: black;
+        }
+
+
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: black;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav>
+        <a href="index.html"> Home</a>
+        <a href="about.html"> About</a>
+        <a href="skills.html"> Skills</a>
+        <a href="community.html">Community</a>
+        <a href="profile.html">Profile</a>
+        <a href="learning-path.html">Learning Path</a>
+        <a href="history.html">Exchange History</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="ruralskillconnect.html">Rural Skill Connect</a>
+        <a href="contact.html"> Contact</a>
+    </nav>
+
+
+    <section class="hero">
+        <h1>🏆 Leaderboard</h1>
+        <p>Top performers in skill exchange</p>
+    </section>
+
+    <br><br><br><br><br>
+
+    <div class="top3">
+
+        <div class="card second">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg">
+            <h3>Anjali</h3>
+            <p>🥈 2nd</p>
+        </div>
+
+        <div class="card first">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg">
+            <h3>Rahul</h3>
+            <p>🥇 1st</p>
+        </div>
+
+        <div class="card third">
+            <img src="https://randomuser.me/api/portraits/men/65.jpg">
+            <h3>Amit</h3>
+            <p>🥉 3rd</p>
+        </div>
+
+    </div>
+
+
+    <table class="table">
+
+        <tr>
+            <th>Rank</th>
+            <th>Name</th>
+            <th>Skills</th>
+            <th>Rating</th>
+            <th>Progress</th>
+            <th>Badge</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Rahul</td>
+            <td>45</td>
+            <td>4.9 ⭐</td>
+            <td>
+                <div style="background:#ccc;border-radius:10px;">
+                    <div style="width:95%;background:#00ffcc;padding:5px;border-radius:10px;">95%</div>
+                </div>
+            </td>
+            <td><span class="badge gold">Gold</span></td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Anjali</td>
+            <td>40</td>
+            <td>4.8 ⭐</td>
+            <td>
+                <div style="background:#ccc;border-radius:10px;">
+                    <div style="width:90%;background:#00ffcc;padding:5px;border-radius:10px;">90%</div>
+                </div>
+            </td>
+            <td><span class="badge silver">Silver</span></td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Amit</td>
+            <td>35</td>
+            <td>4.7 ⭐</td>
+            <td>
+                <div style="background:#ccc;border-radius:10px;">
+                    <div style="width:85%;background:#00ffcc;padding:5px;border-radius:10px;">85%</div>
+                </div>
+            </td>
+            <td><span class="badge bronze">Bronze</span></td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>Roma</td>
+            <td>30</td>
+            <td>4.6 ⭐</td>
+            <td>
+                <div style="background:#ccc;border-radius:10px;">
+                    <div style="width:80%;background:#00ffcc;padding:5px;border-radius:10px;">80%</div>
+                </div>
+            </td>
+            <td>-</td>
+        </tr>
+
+    </table>
+
+
+    <section>
+
+        <h2 style="color:#00ffcc;">🔥 Weekly Top Performers</h2>
+
+        <div style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap; margin-top:20px;">
+
+            <div style="background:rgba(255,255,255,0.1); padding:20px; border-radius:15px;">
+                <h3>💻 Web Dev</h3>
+                <p>Rahul</p>
+            </div>
+
+            <div style="background:rgba(255,255,255,0.1); padding:20px; border-radius:15px;">
+                <h3>🎨 Design</h3>
+                <p>Anjali</p>
+            </div>
+
+            <div style="background:rgba(255,255,255,0.1); padding:20px; border-radius:15px;">
+                <h3>🤖 AI</h3>
+                <p>Amit</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section style="background:rgba(255,255,255,0.05);">
+
+        <h2 style="color:#00ffcc;">🎖 Achievements</h2>
+
+        <p>🏆 Top Mentor | 💡 Fast Learner | 🤝 Community Helper | 🚀 Rising Star</p>
+
+    </section>
+
+
+    <section>
+        <h3>"Success is not about being the best, it's about helping others grow."</h3>
+    </section>
+
+
+    <footer>
+        © 2026 SwapSkillNetwork | Leaderboard
+    </footer>
+
+</body>
+
+</html>
