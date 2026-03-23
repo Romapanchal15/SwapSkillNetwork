@@ -19,10 +19,29 @@
         }
 
 
-        nav {
-            background: black;
-            padding: 15px;
-            text-align: center;
+        .navbar {
+            background: rgba(0, 0, 0, 0.784);
+            padding: 10px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+        }
+
+        .logo img {
+            width: 45px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin: 18px;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            color: #00ffcc;
         }
 
         nav a {
@@ -162,17 +181,25 @@
 <body>
 
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="skills.html">Skills</a>
-        <a href="community.html">Community</a>
-        <a href="learning-path.html">Learning Path</a>
-        <a href="history.html">Exchange History</a>
-        <a href="leaderboard.html">Leaderboard</a>
-        <a href="ruralskillconnect.html">Rural Skill Connect</a>
-        <a href="contact.html">Contact</a>
-         <a href="profile.html">Profile</a>
+    <nav class="navbar">
+
+        <div class="logo">
+            <img src="./Photos/swap-skill-logo.jpg" alt="SwapSkillNetwork Logo">
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="community.html">Community</a>
+            <a href="learning-path.html">Learning Path</a>
+            <a href="history.html">Exchange History</a>
+            <a href="leaderboard.html">Leaderboard</a>
+            <a href="ruralskillconnect.html">Rural Skill Connect</a>
+            <a href="contact.html">Contact</a>
+            <a href="profile.html">Profile</a>
+        </div>
+
     </nav>
 
 
