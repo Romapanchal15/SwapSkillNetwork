@@ -277,14 +277,14 @@
 
 
             <div class="skill-box">
-                <img src="./Photos/skill2.jpg">
+                <img src="./Photos/skill-2.jpg">
                 <h3>🎨 Creative Skills</h3>
                 <p>Graphic Design, Video Editing, Animation, Photography, UI/UX Design.</p>
             </div>
 
 
             <div class="skill-box">
-                <img src="./Photos/skill3.jpg">
+                <img src="./Photos/skill-3.jpg">
                 <h3>📚 Academic Skills</h3>
                 <p>Mathematics, Science, Languages, Research Writing, Exam Preparation.</p>
             </div>
@@ -305,7 +305,7 @@
 
 
             <div class="skill-box">
-                <img src="./Photos/skill6.jpg">
+                <img src="./Photos/skill-6.jpg">
                 <h3>🧠 Personal Growth</h3>
                 <p>Time Management, Productivity, Goal Setting, Motivation.</p>
             </div>
@@ -319,7 +319,7 @@
 
 
             <div class="skill-box">
-                <img src="./Photos/advance tech.jpeg">
+                <img src="./Photos/advance-tech.jpeg">
                 <h3>🤖 Advanced Tech</h3>
                 <p>Artificial Intelligence, Machine Learning, Robotics, Cloud Computing.</p>
             </div>
@@ -336,13 +336,14 @@
 
 
             <div class="barter-card">
+                <form>
                 <h3>🔍 Who Wants to Learn</h3>
 
-                <input type="text" placeholder="Full Name">
-                <input type="text" placeholder="City">
-                <input type="email" placeholder="Email Address">
+                <input type="text" name="Name" placeholder="Full Name" required>
+                <input type="text" name="City" placeholder="City" required>
+                <input type="email" name="Email" placeholder="Email Address" required>
 
-                <input type="text" placeholder="Skill You Want To Learn">
+                <input type="text" name="Skill" placeholder="Skill You Want To Learn" required>
 
                 <select>
                     <option>Select Level</option>
@@ -351,20 +352,22 @@
                     <option>Advanced</option>
                 </select>
 
-                <textarea placeholder="Why do you want this skill?"></textarea>
+                <textarea placeholder="Why do you want this skill?" required></textarea>
 
                 <button>Submit Request</button>
+                </form>
             </div>
 
 
             <div class="barter-card">
+                <form>
                 <h3>📢 Who Is Offering Skill</h3>
 
-                <input type="text" placeholder="Full Name">
-                <input type="text" placeholder="City">
-                <input type="email" placeholder="Email Address">
+                <input type="text" placeholder="Full Name" required>
+                <input type="text" placeholder="City"required>
+                <input type="email" placeholder="Email Address" required>
 
-                <input type="text" placeholder="Skill You Can Teach">
+                <input type="text" placeholder="Skill You Can Teach" required>
 
                 <select>
                     <option>Select Your Expertise</option>
@@ -373,9 +376,10 @@
                     <option>Expert</option>
                 </select>
 
-                <textarea placeholder="Describe your experience"></textarea>
+                <textarea placeholder="Describe your experience" required></textarea>
 
                 <button>Offer Skill</button>
+                </form>
             </div>
 
         </div>
