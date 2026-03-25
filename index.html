@@ -314,12 +314,50 @@
         box-shadow: 0 0 15px #ff512f;
     }
 
-    footer {
-        background: #000;
+    .footer {
+        background: #0f1720;
+        color: white;
+        padding: 40px 20px;
+        font-family: Arial, sans-serif;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 30px;
+    }
+
+    .footer-section {
+        max-width: 250px;
+    }
+
+    .footer-section h3 {
+        color: #00ffcc;
+        margin-bottom: 15px;
+    }
+
+    .footer-section p {
+        margin: 8px 0;
+    }
+
+    .footer-section a {
+        color: #ffd700;
+        text-decoration: none;
+    }
+
+    .footer-section a:hover {
+        color: #00ffcc;
+    }
+
+    .footer hr {
+        margin: 30px 0;
+        border: 0.5px solid #555;
+    }
+
+    .copyright {
         text-align: center;
-        padding: 25px;
         font-size: 14px;
-        border-top: 1px solid #333;
     }
 </style>
 
@@ -564,9 +602,62 @@
             </div>
         </div>
     </section>
-    <footer>
-        <p>© 2026 SwapSkillNetwork 🌍</p>
-        <p>Made with ❤️ for Education & Social Growth</p>
+
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-section">
+                <h3>SwapSkillNetwork</h3>
+                <p>
+                    A platform where people exchange skills, learn together,
+                    and grow together without financial barriers.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="about.html">About</a></p>
+                <p><a href="skills.html">Skills</a></p>
+                <p><a href="community.html">Community</a></p>
+                <p><a href="contact.html">Contact</a></p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+
+                <p>📞 <a href="tel:+917028029764">+91 7028029764</a></p>
+
+                <p>📧 <a href="mailto:swapskillnetwork@gmail.com">
+                        swapskillnetwork@gmail.com
+                    </a></p>
+
+                <p>📍 <a href="https://maps.app.goo.gl/tHsEr9h9VSiH6MDN8" target="_blank">
+                        Chhatrapati Sambhajinagar</a></p>
+
+            </div>
+
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+
+                <p>🌐 <a href="https://www.linkedin.com" target="_blank">LinkedIn</a></p>
+
+                <p>📸 <a href="https://www.instagram.com" target="_blank">Instagram</a></p>
+
+                <p>🐦 <a href="https://twitter.com" target="_blank">Twitter</a></p>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+            © 2026 SwapSkillNetwork | Designed by Roma Panchal
+        </p>
+
     </footer>
 
 </body>
