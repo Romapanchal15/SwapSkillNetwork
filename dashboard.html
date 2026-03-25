@@ -145,8 +145,36 @@
             padding: 5px;
             border-radius: 10px;
         }
+.badge-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
 
+.badge{
+background:rgba(0,255,204,0.15);
+padding:15px 20px;
+border-radius:25px;
+font-weight:bold;
+}
+.goals{
+margin-top:40px;
+}
 
+.goal-container{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+}
+
+.goal{
+background:rgba(255,255,255,0.08);
+padding:20px;
+border-radius:12px;
+width:280px;
+}
         footer {
             text-align: center;
             padding: 20px;
@@ -260,6 +288,54 @@
 
     </div>
 
+    <section class="achievements">
+
+<h2 style="color:#00ffcc;text-align:center;margin:30px 0;">
+🏆 Achievements
+</h2>
+
+<div class="badge-container">
+
+<div class="badge">🌟 First Skill Exchange</div>
+<div class="badge">💻 Web Learner</div>
+<div class="badge">🎨 Creative Designer</div>
+<div class="badge">🤝 Community Helper</div>
+
+</div>
+
+</section>
+<section class="goals">
+
+<h2 style="color:#00ffcc;text-align:center;margin-bottom:20px;">
+🎯 Learning Goals
+</h2>
+
+<div class="goal-container">
+
+<div class="goal">
+<p>Learn JavaScript Basics</p>
+<div class="progress">
+<div style="width:40%">40%</div>
+</div>
+</div>
+
+<div class="goal">
+<p>Improve UI Design Skills</p>
+<div class="progress">
+<div style="width:60%">60%</div>
+</div>
+</div>
+
+<div class="goal">
+<p>Practice Public Speaking</p>
+<div class="progress">
+<div style="width:50%">50%</div>
+</div>
+</div>
+
+</div>
+
+</section>
 
     <footer>
         © 2026 SwapSkillNetwork | Dashboard
