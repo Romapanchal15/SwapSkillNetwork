@@ -15,7 +15,7 @@
 
 
         body {
-            background: linear-gradient(135deg, #5a6581, #526a89);
+            background: linear-gradient(135deg,#1b1f2a);
             color: white;
         }
 
@@ -33,7 +33,7 @@
             width: 45px;
         }
 
-        
+
 
 
         nav {
@@ -55,6 +55,37 @@
             color: #00ffcc;
         }
 
+        .about-section {
+            padding: 60px 20px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+        .about-steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .step {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 12px;
+            width: 220px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+        }
+
+        .features {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .features li {
+            margin: 12px 0;
+            font-size: 18px;
+        }
 
         .section {
             padding: 70px 20px;
@@ -62,11 +93,11 @@
         }
 
         .section-light {
-            background: rgba(255, 255, 255, 0.08);
+            background: rgba(255,255 255, 0.05);
         }
 
         .section-dark {
-            background: rgba(0, 0, 0, 0.35);
+            background: rgba(0, 0, 0, 0.45);
         }
 
         h2 {
@@ -144,17 +175,13 @@
         <div class="logo">
             <img src="./Photos/swap-skill-logo.jpg" alt="SwapSkillNetwork Logo">
         </div>
-        
+
         <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="skills.html">Skills</a>
+            <a href="index.html"> Home</a>
+            <a href="about.html"> About</a>
+            <a href="skills.html"> Skills</a>
             <a href="community.html">Community</a>
-            <a href="learning-path.html">Learning Path</a>
-            <a href="history.html">Exchange History</a>
-            <a href="leaderboard.html">Leaderboard</a>
-            <a href="ruralskillconnect.html">Rural Skill Connect</a>
-            <a href="contact.html">Contact</a>
+            <a href="contact.html"> Contact</a>
             <a href="profile.html">Profile</a>
         </div>
 
@@ -171,7 +198,65 @@
         </p>
     </section>
 
+    <section class="about-section">
+        <h2>🌍 Our Vision</h2>
+        <p>
+            Our vision is to create a world where learning is not limited by money.
+            SwapSkillNetwork connects people who want to share knowledge and learn
+            new skills through collaboration and community support.
+        </p>
+    </section>
 
+    <section class="about-section">
+        <h2>⚙ How SwapSkillNetwork Works</h2>
+
+        <div class="about-steps">
+
+            <div class="step">
+                <h3>1️⃣ Create Your Profile</h3>
+                <p>Add your skills and interests.</p>
+            </div>
+
+            <div class="step">
+                <h3>2️⃣ Offer or Request Skills</h3>
+                <p>Share your expertise or find someone who can teach you.</p>
+            </div>
+
+            <div class="step">
+                <h3>3️⃣ Connect with Learners</h3>
+                <p>Match with people who want to exchange skills.</p>
+            </div>
+
+            <div class="step">
+                <h3>4️⃣ Start Learning Together</h3>
+                <p>Exchange knowledge and grow together.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="about-section">
+        <h2>⭐ Why Choose SwapSkillNetwork?</h2>
+
+        <ul class="features">
+            <li>💡 No money required – only skills</li>
+            <li>🌍 Global learning community</li>
+            <li>🤝 Collaborative knowledge sharing</li>
+            <li>📈 Personal and professional growth</li>
+            <li>🌾 Support for rural skill development</li>
+        </ul>
+
+    </section>
+
+    <section class="about-section">
+        <h2>💙 Social Impact</h2>
+        <p>
+            SwapSkillNetwork promotes equal learning opportunities by allowing
+            people from different backgrounds to share knowledge freely.
+            By encouraging skill exchange, we help build a stronger,
+            more collaborative and empowered society.
+        </p>
+    </section>
     <section class="section section-dark">
         <h2>Our Activities</h2>
 

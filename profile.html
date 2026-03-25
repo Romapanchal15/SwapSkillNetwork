@@ -29,6 +29,48 @@
             top: 0;
         }
 
+        .skill-journey {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .skill-journey h2 {
+            margin-bottom: 40px;
+            font-size: 28px;
+        }
+
+        .journey-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .journey-card {
+            background: linear-gradient(135deg, #1f2937, #111827);
+            padding: 25px;
+            border-radius: 15px;
+            width: 230px;
+            color: white;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            transition: 0.3s;
+        }
+
+        .journey-card:hover {
+            transform: translateY(-10px) scale(1.05);
+        }
+
+        .journey-card a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 20px;
+            background: #00c6ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
         .logo img {
             width: 45px;
         }
@@ -58,20 +100,20 @@
 
         .cover {
             height: 250px;
-            background: url("./Photos/background-image.jpg");
-            background-size: cover;
+            background: url(./Photos/background-image.jpg);
             background-position: center;
+            background-size: cover;
             position: relative;
         }
 
 
         .profile-img {
-            width: 130px;
-            height: 130px;
-            border-radius: 50%;
+            width: 230px;
+            height: 230px;
+            border-radius: 60%;
             border: 5px solid white;
             position: absolute;
-            bottom: -65px;
+            bottom: -55px;
             left: 50%;
             transform: translateX(-50%);
         }
@@ -188,121 +230,155 @@
         </div>
 
         <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="skills.html">Skills</a>
+            <a href="index.html"> Home</a>
+            <a href="about.html"> About</a>
+            <a href="skills.html"> Skills</a>
             <a href="community.html">Community</a>
-            <a href="learning-path.html">Learning Path</a>
-            <a href="history.html">Exchange History</a>
-            <a href="leaderboard.html">Leaderboard</a>
-            <a href="ruralskillconnect.html">Rural Skill Connect</a>
-            <a href="contact.html">Contact</a>
+            <a href="contact.html"> Contact</a>
             <a href="profile.html">Profile</a>
         </div>
 
     </nav>
 
+    
 
-    <div class="cover">
-        <img src="./Photos/profile-image.jpg" class="profile-img">
-    </div>
-
-
-    <div class="profile-header">
-        <h1>Roma Panchal</h1>
-        <p>📍 Chh. Sambhajinagar, India | 💡 Skill Enthusiast</p>
-        <p>"Love learning and sharing knowledge with others!"</p><br>
-
-        <button class="edit-btn">Edit Profile</button>
-
-        <div class="stats">
-            <div class="stat">
-                <h2>4.8 ⭐</h2>
-                <p>Rating</p>
-            </div>
-
-            <div class="stat">
-                <h2>25</h2>
-                <p>Exchanges</p>
-            </div>
-
-            <div class="stat">
-                <h2>12</h2>
-                <p>Skills</p>
-            </div>
-        </div>
-
-    </div>
-
-
-    <section class="section">
-        <h2 style="text-align:center;color:#00ffcc;">🎯 Skills Offered</h2>
-
-        <div class="skills">
-
-            <div class="skill-card">
-                <img src="./Photos/web-development.jpg">
-                <h3>Web Development</h3>
-            </div>
-
-            <div class="skill-card">
-                <img src="./Photos/design-ui.jpg">
-                <h3>UI/UX Design</h3>
-            </div>
-
-            <div class="skill-card">
-                <img src="./Photos/public-speaking.jpg">
-                <h3>Public Speaking</h3>
-            </div>
-
-        </div>
     </section>
-
-
-    <section class="section">
-        <h2 style="text-align:center;color:#00ffcc;">📚 Skills Wanted</h2>
-
-        <div class="skills">
-
-            <div class="skill-card">
-                <img src="./Photos/python-image.jpg">
-                <h3>Python</h3>
+    <div class=" cover">
+                    <img src="./Photos/profile-image.jpg" class="profile-img">
             </div>
 
-            <div class="skill-card">
-                <img src="./Photos/digital-marketing.jpg">
-                <h3>Digital Marketing</h3>
+
+            <div class="profile-header">
+                <h1>Roma Panchal</h1>
+                <p>📍 Chh. Sambhajinagar, India | 💡 Skill Enthusiast</p>
+                <p>"Love learning and sharing knowledge with others!"</p><br>
+
+                <button class="edit-btn">Edit Profile</button>
+
+                <div class="stats">
+                    <div class="stat">
+                        <h2>4.8 ⭐</h2>
+                        <p>Rating</p>
+                    </div>
+
+                    <div class="stat">
+                        <h2>25</h2>
+                        <p>Exchanges</p>
+                    </div>
+
+                    <div class="stat">
+                        <h2>12</h2>
+                        <p>Skills</p>
+                    </div>
+                </div>
+
+            </div><br><br>
+
+
+            <section class="section">
+                <h2 style="text-align:center;color:#00ffcc;">🎯 Skills Offered</h2><br>
+
+                <div class="skills">
+
+                    <div class="skill-card">
+                        <img src="./Photos/web-development.jpg">
+                        <h3>Web Development</h3>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="./Photos/design-ui.jpg">
+                        <h3>UI/UX Design</h3>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="./Photos/public-speaking.jpg">
+                        <h3>Public Speaking</h3>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <section class="section">
+                <h2 style="text-align:center;color:#00ffcc;">📚 Skills Wanted</h2><br>
+
+                <div class="skills">
+
+                    <div class="skill-card">
+                        <img src="./Photos/python-image.jpg">
+                        <h3>Python</h3>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="./Photos/digital-marketing.jpg">
+                        <h3>Digital Marketing</h3>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="./Photos/photography.jpg">
+                        <h3>Photography</h3>
+                    </div>
+
+                </div>
+            </section>
+<section class="skill-journey">
+
+        <h2>🌟 My Skill Journey</h2>
+
+        <div class="journey-container">
+
+            <div class="journey-card">
+                <h3>📊 Dashboard</h3>
+                <p>Track your activity and see your learning progress.</p>
+                <a href="dashboard.html">Open</a>
             </div>
 
-            <div class="skill-card">
-                <img src="./Photos/photography.jpg">
-                <h3>Photography</h3>
+            <div class="journey-card">
+                <h3>🏆 Leaderboard</h3>
+                <p>See your rank and compete with other learners.</p>
+                <a href="leaderboard.html">View Rank</a>
             </div>
 
-        </div>
-    </section>
+            <div class="journey-card">
+                <h3>📚 Learning Path</h3>
+                <p>Follow guided skill paths to master new abilities.</p>
+                <a href="learning-path.html">Start Learning</a>
+            </div>
+
+            <div class="journey-card">
+                <h3>🌾 Rural Skill Connect</h3>
+                <p>Connect with rural talent and share knowledge.</p>
+                <a href="ruralskillconnect.html">Explore</a>
+            </div>
+
+            <div class="journey-card">
+                <h3>🔁 Exchange History</h3>
+                <p>View your past skill swaps and collaborations.</p>
+                <a href="history.html"">Explore</a>
+            </div>
+
+        </div><br><br><hr><br>
+
+            <div class="tabs">
+                <button>Posts</button>
+                <button>Reviews</button>
+            </div>
 
 
-    <div class="tabs">
-        <button>Posts</button>
-        <button>Reviews</button>
-    </div>
+            <div class="post">
+                <h3>💬 Shared Web Development Basics</h3>
+                <p>Taught HTML & CSS fundamentals to 5 learners this week!</p>
+            </div>
+
+            <div class="post">
+                <h3>🎨 Learning UI Design</h3>
+                <p>Currently improving design skills with real projects.</p>
+            </div><br>
 
 
-    <div class="post">
-        <h3>💬 Shared Web Development Basics</h3>
-        <p>Taught HTML & CSS fundamentals to 5 learners this week!</p>
-    </div>
-
-    <div class="post">
-        <h3>🎨 Learning UI Design</h3>
-        <p>Currently improving design skills with real projects.</p>
-    </div>
-
-
-    <footer>
-        © 2026 SwapSkillNetwork | User Profile
-    </footer>
+            <footer>
+                © 2026 SwapSkillNetwork | User Profile
+            </footer>
 
 </body>
 
