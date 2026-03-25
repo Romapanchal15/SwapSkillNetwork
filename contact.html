@@ -134,8 +134,69 @@
             margin-bottom: 20px;
         }
 
+        .contact-link {
+            color: yellow;
+            font-weight: bold;
+            text-decoration: none;
+        }
 
+        .contact-link:hover {
+            color: #00ffcc;
+        }
 
+        .support {
+            padding: 60px;
+            text-align: center;
+        }
+
+        .support-table {
+            margin: auto;
+            border-collapse: collapse;
+            width: 60%;
+        }
+
+        .support-table th,
+        .support-table td {
+            padding: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .support-table th {
+            background: #00ffcc;
+            color: black;
+        }
+
+        .why-contact {
+            padding: 60px 20px;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .why-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .why-box {
+            width: 250px;
+            padding: 20px;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.1);
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .why-box:hover {
+            transform: translateY(-8px);
+            background: rgba(0, 255, 204, 0.2);
+        }
+
+        .why-box h3 {
+            margin-bottom: 10px;
+            color: #00ffcc;
+        }
 
         .faq {
             padding: 60px 20px;
@@ -192,13 +253,23 @@
 
             <form>
                 <h2 style="color:#00ffcc;">Send Message</h2>
+                <p style="font-size:14px;color:#ccc;margin-bottom:15px;">
+                    Have a question, suggestion, or collaboration idea?
+                    Send us a message and our team will respond soon.
+                </p>
 
                 <input type="text" placeholder="Your Name" required>
                 <input type="email" placeholder="Your Email" required>
                 <input type="text" placeholder="Subject">
                 <textarea rows="4" placeholder="Your Message"></textarea>
+                <p style="font-size:12px;color:#aaa;text-align:right;">
+                    Maximum 500 characters
+                </p>
 
                 <button>Send Message</button>
+                <p style="font-size:12px;color:#aaa;margin-top:10px;text-align:center;">
+                    🔒 Your information is secure and will never be shared.
+                </p>
 
             </form>
 
@@ -206,16 +277,21 @@
             <div class="info">
 
                 <div class="info-box">
-                    <p>📧 Email: <a href="mailto:swapskillnetwork@gmail.com">swapskillnetwork@gmail.com</a></p>
+                    <p>📧 Email: <a href="mailto:swapskillnetwork@gmail.com"
+                            class="contact-link">swapskillnetwork@gmail.com</a></p>
                 </div>
 
                 <div class="info-box">
-                    <p>📞 Phone: <a href="tel:+917028029764">+91 7028029764</a></p>
+                    <p>📞 Phone: <a href="tel:+917028029784" class="contact-link">+91 7028029784</a></p>
                 </div>
 
                 <div class="info-box">
-                    <h3>Address</h3>
-                    <p>Jalna, Maharashtra, India</p>
+                    <p>📍Address:
+
+                        <a href="https://maps.app.goo.gl/EvqykSkapqb6M4HX6" class="contact-link" target="_blank">
+                            CPSN, Maharashtra, India
+                        </a>
+
                 </div>
 
             </div>
@@ -224,8 +300,64 @@
 
     </section>
 
+    <section class="support">
 
+        <h2>⏰ Support Hours</h2><br>
 
+        <table class="support-table">
+
+            <tr>
+                <th>Day</th>
+                <th>Support Time</th>
+            </tr>
+
+            <tr>
+                <td>Monday - Friday</td>
+                <td>9:00 AM – 6:00 PM</td>
+            </tr>
+
+            <tr>
+                <td>Saturday</td>
+                <td>10:00 AM – 4:00 PM</td>
+            </tr>
+
+            <tr>
+                <td>Sunday</td>
+                <td>Closed</td>
+            </tr>
+
+        </table>
+
+    </section>
+    <section class="why-contact">
+
+        <h2 style="text-align:center;color:#00ffcc;">⭐ Why Contact Us?</h2>
+
+        <div class="why-container">
+
+            <div class="why-box">
+                <h3>💡 Get Guidance</h3>
+                <p>Our team helps users discover the right skills and learning paths.</p>
+            </div>
+
+            <div class="why-box">
+                <h3>🤝 Skill Collaboration</h3>
+                <p>Connect with other learners and mentors to exchange knowledge.</p>
+            </div>
+
+            <div class="why-box">
+                <h3>🚀 Platform Support</h3>
+                <p>If you face any technical issues, our support team will assist you.</p>
+            </div>
+
+            <div class="why-box">
+                <h3>📢 Share Feedback</h3>
+                <p>Your suggestions help us improve the SwapSkillNetwork platform.</p>
+            </div>
+
+        </div>
+
+    </section>
 
     <section class="faq">
 
