@@ -104,19 +104,18 @@
         background: white;
         color: black;
         width: 260px;
-        height: 280px;
+        height: 290px;
         margin: 15px;
         padding: 20px;
         border-radius: 15px;
         display: inline-block;
-
         vertical-align: top;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-        transition: 0.3s;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+        transition: 0.4s;
     }
 
     .card:hover {
-        transform: scale(1.05);
+        transform: translateY(-10px) scale(1.05);
     }
 
     .card img {
@@ -126,33 +125,201 @@
         border-radius: 10px;
     }
 
+    .timeline-section {
+        background: #1c2735;
+    }
+
+    .timeline {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .timeline-box {
+        background: #2f3e52;
+        padding: 25px;
+        border-radius: 12px;
+        width: 200px;
+        transition: 0.3s;
+    }
+
+    .timeline-box:hover {
+        transform: translateY(-8px);
+        background: #00ffcc;
+        color: black;
+    }
+
+    .skills-category {
+        background: #182433;
+    }
+
+
+
+    .skill-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 20px;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .skill-item {
+        background: #243b55;
+        padding: 20px;
+        border-radius: 10px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .skill-item:hover {
+        background: #00c6ff;
+        transform: scale(1.05);
+    }
+
+    .features {
+        background: #1a2634;
+        padding: 60px 20px;
+    }
+
+    .feature-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .feature {
+        background: #243b55;
+        padding: 20px;
+        border-radius: 10px;
+        font-weight: bold;
+        width: 220px;
+        transition: 0.3s;
+    }
+
+    .feature:hover {
+        background: #00c6ff;
+        color: black;
+        transform: scale(1.05);
+    }
+
+    .skills-table-section {
+        padding: 70px 20px;
+        text-align: center;
+        background: #16202b;
+    }
+
+    .skills-table {
+        margin: auto;
+        border-collapse: collapse;
+        width: 80%;
+        max-width: 900px;
+        font-size: 18px;
+        background: white;
+        color: black;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .skills-table th {
+        background: #ff512f;
+        color: white;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .skills-table td {
+        padding: 14px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .skills-table tr:nth-child(even) {
+        background: #f4f4f4;
+    }
+
+    .skills-table tr:hover {
+        background: #ffe5e0;
+        transition: 0.3s;
+    }
+
+    .dynamic-text {
+        padding: 70px 20px;
+        text-align: center;
+        background: #1a2736;
+    }
+
+    .changing-text {
+        font-size: 22px;
+        letter-spacing: 2px;
+        animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+        from {
+            color: #00c6ff;
+        }
+
+        to {
+            color: #00ffcc;
+        }
+    }
+
+    .feature-table-section {
+        padding: 70px 20px;
+        text-align: center;
+        background: #1b2c3b;
+    }
+
+    .feature-table {
+        width: 85%;
+        margin: auto;
+        border-collapse: collapse;
+        background: white;
+        color: black;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .feature-table th {
+        background: #0072ff;
+        color: white;
+        padding: 15px;
+    }
+
+    .feature-table td {
+        padding: 14px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .feature-table tr:hover {
+        background: #e6f2ff;
+        transition: 0.3s;
+    }
+
 
     button {
-        padding: 12px 25px;
+        padding: 12px 28px;
         border: none;
-        border-radius: 25px;
+        border-radius: 30px;
         background: linear-gradient(45deg, #ff512f, #dd2476);
         color: white;
-        cursor: pointer;
         font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
     }
 
     button:hover {
-        background: linear-gradient(45deg, #00c6ff, #0072ff);
+        transform: scale(1.1);
+        box-shadow: 0 0 15px #ff512f;
     }
-
-
-    aside {
-        background: #222;
-        padding: 30px;
-        text-align: center;
-    }
-
 
     footer {
-        background: black;
+        background: #000;
         text-align: center;
-        padding: 20px;
+        padding: 25px;
+        font-size: 14px;
+        border-top: 1px solid #333;
     }
 </style>
 
@@ -234,14 +401,135 @@
     </section>
 
 
+    <section class="skills-category">
+        <h2>🎯 Skill Categories</h2>
 
-    <aside>
-        <h2>🔥 How It Works</h2>
-        <p>1️⃣ Create Profile</p>
-        <p>2️⃣ Add Skills</p>
-        <p>3️⃣ Find Matches</p>
-        <p>4️⃣ Start Learning</p>
-    </aside>
+        <div class="skill-grid">
+
+            <div class="skill-item">💻 Technology</div>
+            <div class="skill-item">🎨 Creative Arts</div>
+            <div class="skill-item">📚 Education</div>
+            <div class="skill-item">🌱 Rural Skills</div>
+            <div class="skill-item">🗣 Communication</div>
+            <div class="skill-item">📈 Business</div>
+
+        </div>
+    </section>
+
+    <section class="skills-table-section">
+
+        <h2>🌍 Skill Exchange Opportunities</h2>
+
+        <table class="skills-table">
+
+            <tr>
+                <th>Skill Offered</th>
+                <th>Skill Wanted</th>
+                <th>Level</th>
+                <th>Availability</th>
+            </tr>
+
+            <tr>
+                <td>Web Development</td>
+                <td>Graphic Design</td>
+                <td>Beginner</td>
+                <td>Weekends</td>
+            </tr>
+
+            <tr>
+                <td>Photography</td>
+                <td>Video Editing</td>
+                <td>Intermediate</td>
+                <td>Evenings</td>
+            </tr>
+
+            <tr>
+                <td>English Speaking</td>
+                <td>Public Speaking</td>
+                <td>Beginner</td>
+                <td>Flexible</td>
+            </tr>
+
+            <tr>
+                <td>Digital Marketing</td>
+                <td>Content Writing</td>
+                <td>Advanced</td>
+                <td>Weekdays</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+
+    <section class="dynamic-text">
+        <h2>Learning Never Stops</h2>
+        <p class="changing-text">
+            Share Skills • Learn Skills • Grow Together
+        </p>
+    </section>
+
+    <section class="feature-table-section">
+
+        <h2>🚀 Platform Features</h2>
+
+        <table class="feature-table">
+
+            <tr>
+                <th>Feature</th>
+                <th>Description</th>
+                <th>Benefit</th>
+            </tr>
+
+            <tr>
+                <td>Skill Exchange</td>
+                <td>Users teach and learn from each other</td>
+                <td>Learning without money</td>
+            </tr>
+
+            <tr>
+                <td>Learning Path</td>
+                <td>Structured skill development journey</td>
+                <td>Better career growth</td>
+            </tr>
+
+            <tr>
+                <td>Leaderboard</td>
+                <td>Top contributors are ranked</td>
+                <td>Motivation and recognition</td>
+            </tr>
+
+            <tr>
+                <td>Rural Skill Connect</td>
+                <td>Support traditional and rural skills</td>
+                <td>Empowering local communities</td>
+            </tr>
+
+            <tr>
+                <td>Exchange History</td>
+                <td>Track previous skill exchanges</td>
+                <td>Measure progress</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+    <section class="features">
+        <h2>✨ Platform Highlights</h2>
+
+        <div class="feature-box">
+            <div class="feature">⚡ Instant Skill Matching</div>
+            <div class="feature">🌍 Global Learning Community</div>
+            <div class="feature">🎓 Peer-to-Peer Learning</div>
+            <div class="feature">💡 Learn Without Paying Money</div>
+            <div class="feature">📈 Personal Growth Tracking</div>
+            <div class="feature">🤝 Collaborative Skill Exchange</div>
+        </div>
+
+    </section>
+
+
 
 
     <section>
@@ -251,7 +539,31 @@
             Skill sharing reduces inequality and promotes collaboration 💙
         </p>
     </section>
+    <section class="timeline-section">
+        <h2>🔄 Skill Exchange Journey</h2>
 
+        <div class="timeline">
+            <div class="timeline-box">
+                <h3>Step 1</h3>
+                <p>Create your profile and list the skills you know.</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>Step 2</h3>
+                <p>Search for people who want to exchange knowledge.</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>Step 3</h3>
+                <p>Connect and start learning from each other.</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>Step 4</h3>
+                <p>Grow together and share your progress.</p>
+            </div>
+        </div>
+    </section>
     <footer>
         <p>© 2026 SwapSkillNetwork 🌍</p>
         <p>Made with ❤️ for Education & Social Growth</p>
